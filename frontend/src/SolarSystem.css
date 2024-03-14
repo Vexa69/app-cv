@@ -1,0 +1,62 @@
+.control-panel {
+	position: fixed;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 10;
+}
+
+.speed-button {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+.speed-bar {
+	background-color: white; /* Fait la barre visible */
+	width: 10px; /* Largeur de la barre */
+	height: 200px; /* Hauteur de la barre */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black; /* Encadrement de la barre */
+}
+
+.speed-slider {
+	-webkit-appearance: none;
+	appearance: none;
+	background: transparent;
+	outline: none;
+	opacity: 0.7;
+	width: 200px; /* Hauteur pour la barre, car elle est tournée */
+	height: 10px; /* Correspond à la largeur de la barre */
+	transform: rotate(90deg); /* Oriente le slider verticalement */
+	cursor: pointer;
+}
+
+.speed-slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	background: black;
+	cursor: pointer;
+}
+
+.speed-slider::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	background: black;
+	cursor: pointer;
+}
